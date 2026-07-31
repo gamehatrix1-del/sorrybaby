@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You, Always</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="photo-layer" aria-hidden="true"></div>
+
+    <div class="backdrop" aria-hidden="true">
+      <span class="heart h1">❤</span>
+      <span class="heart h2">❤</span>
+      <span class="heart h3">❤</span>
+      <span class="heart h4">❤</span>
+      <span class="heart h5">❤</span>
+      <span class="heart h6">❤</span>
+    </div>
+
+    <main class="page-shell">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">For Aadrika, with all my love</div>
+          <h1>Aadrika, I’m sorry I couldn’t wish you properly today.</h1>
+        </div>
+        <div class="topbar-note">
+          I was busy, but my heart was still with you.
+        </div>
+      </header>
+
+      <section class="romance-card">
+        <aside class="menu-panel">
+          <div class="menu-title">Open my note</div>
+          <button class="menu-item active" data-step="apology">
+            1. I’m sorry
+          </button>
+          <button class="menu-item" data-step="daypass">
+            2. Your day pass
+          </button>
+          <button class="menu-item" data-step="promise">3. My promise</button>
+        </aside>
+
+        <div class="story-panel">
+          <div class="chapter active" id="apology">
+            <p class="lead-line">
+              Aadrika, I wanted this to feel like me — soft, honest, and true.
+            </p>
+            <p>
+              I wasn’t able to wish you properly because I was busy with life,
+              but that doesn’t make my love for you any less real. I’m sorry I
+              couldn’t give you the warmth you deserve on your day.
+            </p>
+            <p>
+              You are the calm I return to, the smile I trust, and the person
+              who makes my world feel gentler just by being in it.
+            </p>
+          </div>
+
+          <div class="chapter" id="daypass">
+            <p class="lead-line">Here is your day pass to use me.</p>
+            <p>
+              Whenever life gets heavy or your day needs a little softness, you
+              can use this pass to call on me. I am yours to lean on, to laugh
+              with, and to love in the quiet moments too.
+            </p>
+            <p>
+              This isn’t just a promise for today — it is a reminder that I want
+              to be available to you in the ways that matter most.
+            </p>
+          </div>
+
+          <div class="chapter" id="promise">
+            <p class="lead-line">I want to be better, not louder.</p>
+            <p>
+              I promise to show up with more warmth, more patience, and more
+              care. I want to be the kind of man who makes your life softer
+              simply by being in it, especially on the days when you need me
+              most.
+            </p>
+            <p>
+              Aadrika, you are not a passing thought to me — you are the person
+              I want to keep choosing, lovingly and honestly, every single day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="message-strip">
+        <span class="spark">✦</span>
+        <p>
+          Aadrika, you mean more to me than any day, any missed wish, or any
+          busy minute. I love you, and I want the next chapter of our story to
+          feel soft, true, and deeply ours.
+        </p>
+      </section>
+
+      <section class="reveal-box" id="loveReveal">
+        <button class="reveal-btn" id="revealLoveBtn">
+          Open the final truth
+        </button>
+        <div class="reveal-message">
+          <span class="reveal-text">I love you, Aadrika.</span>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-card">
+        <button class="popup-close" id="closePopupBtn" aria-label="Close note">
+          ×
+        </button>
+        <p class="popup-kicker">A little note for Aadrika</p>
+        <h2 id="popupTitle">You matter to me.</h2>
+        <p id="popupBody">
+          I was busy and couldn’t wish you properly, but I still wanted you to
+          feel my love. Take this day pass and use me anytime your heart needs
+          me.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
